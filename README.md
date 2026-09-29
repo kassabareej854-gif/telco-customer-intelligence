@@ -1,6 +1,9 @@
 Telco Customer Intelligence
+
 A machine learning project for analyzing telecom customer behavior and building predictive models for CLTV estimation, customer churn prediction, and customer segmentation.
+
 Project Overview
+
 This project uses the Telco Customer Churn dataset to build an end-to-end customer intelligence workflow:
 Data preprocessing and exploratory data analysis (EDA)
 Customer Lifetime Value (CLTV) proxy estimation using regression
@@ -8,7 +11,9 @@ Customer churn prediction using classification
 Customer segmentation using K-Means clustering
 Interactive Streamlit dashboard for customer-level predictions and analysis
 Project Structure
+
 ```text
+
 telco-customer-intelligence/
 │
 ├── notebooks/
