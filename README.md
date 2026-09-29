@@ -36,9 +36,13 @@ telco-customer-intelligence/
 └── README.md
 ```
 > The exact folder structure may vary depending on how the project files are uploaded to GitHub.
+
 Notebooks
+
 01 — Data Preprocessing & EDA
+
 This notebook prepares the dataset for machine learning and explores its main characteristics.
+
 Main steps:
 Inspect dataset shape and data types
 Check missing values and duplicate records
@@ -46,7 +50,9 @@ Convert `Total Charges` to numeric
 Clean text fields
 Remove duplicate rows
 Explore customer and service-related variables
+
 02 — CLTV Regression
+
 This notebook estimates a CLTV proxy using customer and service characteristics.
 The target is selected as:
 `Total Revenue`, if available
@@ -62,7 +68,9 @@ One-hot encoding
 Regression model training
 Model evaluation using MAE, RMSE, and R²
 Selection and saving of the trained model
+
 03 — Churn Classification
+
 This notebook predicts whether a customer is likely to churn.
 The target is encoded as:
 ```text
@@ -77,7 +85,9 @@ Classification model training
 Churn prediction
 Model evaluation using classification metrics
 Saving the trained churn model
+
 04 — Customer Segmentation
+
 This notebook groups customers into segments based on selected customer-level characteristics.
 The segmentation workflow includes:
 Feature selection
@@ -117,7 +127,9 @@ The project includes an interactive Streamlit application in:
 ```text
 app.py
 ```
+
 The dashboard is designed to provide customer-level intelligence, including:
+
 Churn prediction
 CLTV estimation
 Customer segmentation
@@ -134,9 +146,11 @@ Jupyter Notebook
 Installation
 Clone the repository:
 ```bash
+
 git clone <YOUR_GITHUB_REPOSITORY_URL>
 cd telco-customer-intelligence
 ```
+
 Install the required packages:
 ```bash
 pip install -r requirements.txt
@@ -144,12 +158,16 @@ pip install -r requirements.txt
 Running the Dashboard
 Run the Streamlit application with:
 ```bash
+
 streamlit run app.py
 ```
 Dataset
+
 The project is based on the Telco Customer Churn dataset.
 The dataset contains customer demographics, account information, subscribed services, charges, and churn-related information.
+
 Project Goal
+
 The goal of this project is to demonstrate an end-to-end customer analytics workflow that combines:
 Data Preparation → Exploratory Analysis → Prediction → Segmentation → Interactive Dashboard
 This project was developed as a practical machine learning and data analytics portfolio project.
